@@ -53,7 +53,6 @@ export const getCustomerDashboard = async (req, res) => {
 
     }
 
-
     const customer = customerResult.rows[0];
 
 
