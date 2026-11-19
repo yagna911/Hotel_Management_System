@@ -34,7 +34,6 @@ import adminReservationsRoutes from "./routes/adminReservationsRoutes.js";
 
 // Admin Payments
 import paymentRoutes from "./routes/paymentRoutes.js";
-import settingsRoutes from "./routes/settingsRoutes.js";
 // Customer Bookings
 import customerBookingRoutes from "./routes/CustomerRoutes/customerBookingRoutes.js";
 
@@ -308,19 +307,7 @@ app.use(
   "/api/admin",
   adminReportsRoutes
 );
-// =====================================================
-// ADMIN SETTINGS ROUTES
-// =====================================================
-//
-// GET /api/admin/settings
-// PUT /api/admin/settings
-//
-// =====================================================
 
-app.use(
-  "/api/admin/settings",
-  settingsRoutes
-);
 
 // =====================================================
 // ADMIN / GENERAL ROOM ROUTES
@@ -550,9 +537,7 @@ app.listen(
     console.log(
       "Admin Reports        : /api/admin/reports"
     );
-console.log(
-  "Admin Settings        : /api/admin/settings"
-);
+
     console.log(
       "Rooms                : /api/rooms"
     );
