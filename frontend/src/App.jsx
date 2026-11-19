@@ -39,8 +39,6 @@ import Payments from "./pages/Admin/Payments";
 import CustomerManagement from "./pages/Admin/CustomerManagement";
 import AdminServices from "./pages/Admin/AdminServices";
 import Reports from "./pages/Admin/Reports";
-import Settings from "./pages/Admin/Settings";
-
 // =====================================================
 // CUSTOMER
 // =====================================================
@@ -53,8 +51,6 @@ import CustomerBookRoom from "./pages/Customer/CustomerBookRoom";
 import CustomerServices from "./pages/Customer/CustomerServices";
 import CustomerPayments from "./pages/Customer/CustomerPayments";
 import CustomerProfile from "./pages/Customer/CustomerProfile";
-import CustomerSettings from "./pages/Customer/CustomerSettings";
-
 // =====================================================
 // SUPER ADMIN
 // =====================================================
@@ -65,16 +61,6 @@ import SuperAdminManagement from "./pages/SuperAdmin/SuperAdminManagement";
 import SuperAdminHotels from "./pages/SuperAdmin/SuperAdminHotels";
 import SuperAdminReports from "./pages/SuperAdmin/SuperAdminReports";
 
-// =====================================================
-// SUPER ADMIN SETTINGS
-// =====================================================
-
-import SuperAdminSettings from "./pages/SuperAdmin/Settings/SuperAdminSettings";
-import HotelSettings from "./pages/SuperAdmin/Settings/HotelSettings";
-import NotificationSettings from "./pages/SuperAdmin/Settings/NotificationSettings";
-import SecuritySettings from "./pages/SuperAdmin/Settings/SecuritySettings";
-import RegionalSettings from "./pages/SuperAdmin/Settings/RegionalSettings";
-import DatabaseSettings from "./pages/SuperAdmin/Settings/DatabaseSettings";
 
 // =====================================================
 // APP CSS
@@ -250,63 +236,6 @@ function App() {
       />
 
 
-      {/* =================================================
-          SUPER ADMIN SETTINGS
-      ================================================= */}
-
-      <Route
-        path="/super-admin/settings"
-        element={
-          <ProtectedRoute allowedRoles={["SUPER_ADMIN"]}>
-            <SuperAdminSettings />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/super-admin/settings/hotel"
-        element={
-          <ProtectedRoute allowedRoles={["SUPER_ADMIN"]}>
-            <HotelSettings />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/super-admin/settings/notifications"
-        element={
-          <ProtectedRoute allowedRoles={["SUPER_ADMIN"]}>
-            <NotificationSettings />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/super-admin/settings/security"
-        element={
-          <ProtectedRoute allowedRoles={["SUPER_ADMIN"]}>
-            <SecuritySettings />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/super-admin/settings/regional"
-        element={
-          <ProtectedRoute allowedRoles={["SUPER_ADMIN"]}>
-            <RegionalSettings />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/super-admin/settings/database"
-        element={
-          <ProtectedRoute allowedRoles={["SUPER_ADMIN"]}>
-            <DatabaseSettings />
-          </ProtectedRoute>
-        }
-      />
 
 
       {/* =================================================
@@ -376,14 +305,7 @@ function App() {
         }
       />
 
-      <Route
-        path="/admin/settings"
-        element={
-          <ProtectedRoute allowedRoles={["ADMIN"]}>
-            <Settings />
-          </ProtectedRoute>
-        }
-      />
+      
 
 
       {/* =================================================
@@ -521,21 +443,7 @@ function App() {
       />
 
 
-      {/* =================================================
-          CUSTOMER SETTINGS
-      ================================================= */}
-
-      <Route
-        path="/customer/settings"
-        element={
-          <ProtectedRoute
-            allowedRoles={["CUSTOMER", "VIP"]}
-          >
-            <CustomerSettings />
-          </ProtectedRoute>
-        }
-      />
-
+      
 
       {/* =================================================
           404

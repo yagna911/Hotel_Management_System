@@ -152,19 +152,7 @@ function CustomerSidebar() {
         </NavLink>
 
 
-        {/* =========================================
-            SETTINGS
-        ========================================= */}
-
-        <NavLink
-          to="/customer/settings"
-          className={({ isActive }) =>
-            `customer-nav-link ${isActive ? "active" : ""}`
-          }
-        >
-          <FaCog />
-          <span>Settings</span>
-        </NavLink>
+        
 
       </nav>
 

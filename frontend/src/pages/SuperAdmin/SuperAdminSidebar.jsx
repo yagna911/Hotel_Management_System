@@ -119,23 +119,9 @@ function SuperAdminSidebar() {
             ACCOUNT
         ===================================================== */}
 
-        <p className="super-admin-nav-title super-admin-account-title">
-          Account
-        </p>
+      
 
-
-        {/* Settings */}
-
-        <NavLink
-          to="/super-admin/settings"
-          className={({ isActive }) =>
-            `super-admin-nav-link ${isActive ? "active" : ""}`
-          }
-        >
-          <FaCog />
-          <span>Settings</span>
-        </NavLink>
-
+        
       </nav>
 
 

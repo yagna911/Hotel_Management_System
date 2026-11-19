@@ -98,14 +98,6 @@ function Sidebar() {
           <span>Reports & Analysis</span>
         </li>
 
-        <li
-          className={location.pathname === "/admin/settings" ? "active" : ""}
-          onClick={() => navigate("/admin/settings")}
-        >
-          <FaCog />
-          <span>Settings</span>
-        </li>
-
       </ul>
 
       {/* Logout */}
